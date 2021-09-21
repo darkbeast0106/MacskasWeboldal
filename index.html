@@ -36,6 +36,12 @@
     <script>
         function uj_sor_hozzadasa() {
             var url = "https://aws.random.cat/meow";
+            $.get(url,
+                function (data, textStatus, jqXHR) {
+                    console.log(data);
+                },
+                "json"
+            );
         }
     </script>
 </body>
